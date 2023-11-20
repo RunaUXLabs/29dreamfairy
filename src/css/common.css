@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* *::before , *::after{box-sizing: border-box;} */
+ul, li {
+  list-style: none;
+}
+/* reset - E */
+a:hover {
+  cursor: pointer;
+}
+/* *::before , *::after{box-sizing: border-box;} */
+.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  left: -9999px;
+}
+/* .clearfix::after{content: ""; display: block; clear: both;} */
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  /* display: block; */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  word-break: keep-all;
+  -webkit-font-smoothing: antialiased;
+  font: 16px 'Poppins', 'Pretendard', dotum, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 180%;
+}
+.skip-nav a {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #f90;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: 10000;
+}
+.skip-nav a:focus {
+  top: 0;
+}
+/* common - E */
+
+/* layout */
+.inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.header .logo {
+  width: 195px;
+}
+button,
+.button {
+  font: 16px 'Poppins', 'Pretendard', dotum, sans-serif;
+  letter-spacing: -0.48px;
+  width: 100%;
+  max-width: 800px;
+  height: 70px;
+  background: #3B1E88;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reverse {
+  background: #FFF;
+  border: 2px solid #3B1E88;
+  color: #3B1E88;
+}
+.qButton {
+  width: 100%;
+  max-width: 650px;
+  height: 110px;
+  padding: 0 20px;
+  border: 2px solid #3B1E88;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #3B1E88;
+  background: #FFF;
+  cursor: pointer;
+}
+.qButton + .qButton,
+.button + .button {
+  margin-top: 30px;
+}
+.qButton.click,
+.qButton:hover {
+  background-color: #3B1E88;
+  color: #FFF;
+}
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px;
+}
